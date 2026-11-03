@@ -1,0 +1,133 @@
+/* ==========================================================================
+   Pousada Serra e Mar: ajustes responsivos
+   ========================================================================== */
+
+/* Menu em tela cheia a partir de tablets */
+@media (max-width: 1000px) {
+  :root { --topo-altura: 68px; }
+
+  .topo__interno { justify-content: space-between; }
+
+  .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    grid-template-columns: auto auto;
+    column-gap: .6rem;
+    align-items: center;
+    transform: none;
+  }
+  .logo__emblema,
+  .topo.rolado .logo__emblema { grid-row: span 2; width: 38px; height: 38px; margin: 0; }
+  .logo__nome { align-self: end; font-size: .92rem; }
+  .logo__tipo,
+  .topo.rolado .logo__tipo { display: block; align-self: start; justify-self: start; }
+  .topo.rolado .logo { top: 0; }
+
+  .menu-botao {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin-right: -.5rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .menu-botao span {
+    position: absolute;
+    left: 10px;
+    width: 24px;
+    height: 1.5px;
+    background: currentColor;
+    transition: transform .3s, top .3s;
+  }
+  .menu-botao span:first-child { top: 17px; }
+  .menu-botao span:last-child { top: 26px; }
+  .menu-botao[aria-expanded="true"] span:first-child { top: 22px; transform: rotate(45deg); }
+  .menu-botao[aria-expanded="true"] span:last-child { top: 22px; transform: rotate(-45deg); }
+
+  .menu {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: var(--topo-altura) var(--margem) 2rem;
+    overflow-y: auto;
+    background: var(--mar);
+    color: #fff;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+  }
+  .menu.aberto { visibility: visible; opacity: 1; }
+  .menu__lista { flex-direction: column; gap: 1.5rem; }
+  .menu a {
+    font-family: var(--serifa);
+    font-size: clamp(1.6rem, 6vw, 2.25rem);
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  /* O topo fica claro sobre o menu aberto */
+  .topo.menu-ativo { background: transparent; color: #fff; box-shadow: none; }
+  .topo.menu-ativo .logo { position: relative; z-index: 2; }
+
+  .reserva__form { grid-template-columns: repeat(3, 1fr); }
+  .reserva__form .botao { grid-column: 1 / -1; }
+}
+
+/* Colunas empilhadas */
+@media (max-width: 860px) {
+  .duo,
+  .duo--inverso,
+  .duvidas__grade,
+  .arredores__grade { grid-template-columns: 1fr; }
+
+  .duo--inverso .colagem { order: 2; }
+
+  .colagem {
+    width: 100%;
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  .fantasma { opacity: .035; }
+
+  .carrossel { --slide: 76vw; }
+
+  .rodape__grade { grid-template-columns: repeat(2, 1fr); }
+
+  .mapa { max-width: 560px; margin-inline: auto; }
+}
+
+/* Celulares */
+@media (max-width: 560px) {
+  body { font-size: .95rem; }
+
+  .hero { min-height: 560px; }
+  .hero__conteudo { padding-top: 6rem; }
+  .hero__titulo { font-size: clamp(3rem, 15.5vw, 4.5rem); }
+  .hero__texto br { display: none; }
+  .anel { width: 104px; height: 104px; }
+
+  .reserva__form { grid-template-columns: 1fr 1fr; }
+  .campo:nth-child(3) { grid-column: 1 / -1; }
+
+  .fantasma { display: none; }
+
+  .carrossel { --slide: 84vw; }
+  .carrossel__seta { width: 64px; }
+  .carrossel__seta svg { width: 48px; }
+
+  .perguntas details p { padding-right: 0; padding-left: 0; }
+
+  .rodape__grade { grid-template-columns: 1fr; gap: 2rem; }
+}

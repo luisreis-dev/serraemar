@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pousada Serra e Mar</title>
+  <meta name="description" content="Pousada Serra e Mar: hospedagem entre a mata e o oceano, para desacelerar com calma, boa mesa e natureza por perto.">
+  <meta name="theme-color" content="#0e4f57">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%230e4f57'/%3E%3Cpath d='M12 38 26 18l8 11 5-6 13 15' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Cpath d='M12 46c7-5 13-5 20 0s13 5 20 0' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Símbolos reutilizados: emblema da marca e recortes de papel rasgado -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="emblema" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M11 37 25 17l8 11 5-6 15 15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M11 44c7-5 14-5 21 0s14 5 21 0M16 51c5-3.5 11-3.5 16 0s11 3.5 16 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="seta" viewBox="0 0 64 12">
+      <path d="M0 6h62M56 1l6 5-6 5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    </symbol>
+    <symbol id="rasgo-a" viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#fff" opacity=".82" d="M0 60L0 31.5L9 33.2L14 34.3L23 34.2L31 32.5L42 38.5L49 34.9L60 40.4L68 36.6L79 33.6L87 34.2L91 31.5L100 34.6L108 31L119 27.7L127 24L133 23.9L145 24.8L151 25.7L161 23.8L171 26.9L176 26.2L187 28.2L196 23.7L206 21.8L211 25.1L218 21.9L226 21.7L239 19.8L248 17L255 18.5L263 17.6L273 21.7L279 20.7L285 22.2L297 25.5L307 21.7L313 25.2L319 24.1L328 21.6L336 25.7L345 21.3L355 24.9L362 21.3L373 24L383 23.9L388 21.3L397 25.3L409 21.2L413 22.8L422 25.4L433 24.3L437 25.4L448 25.9L460 25.8L466 24L475 18.6L485 22.2L494 21.2L499 17.6L506 19L514 15.2L523 16.4L533 16.4L539 17.9L548 20L556 23.9L568 18.8L575 19.8L584 17.5L595 22.8L601 18.5L607 15.4L617 16.5L629 16.3L632 22.8L644 18.7L652 19.7L661 28.3L671 28.1L676 27.3L684 31.3L695 32L702 28.4L713 33.6L722 32.2L730 31.6L735 30.1L745 27.1L751 29.6L761 33.7L774 33.3L782 38.6L790 35.5L795 35.5L803 35.9L814 40.7L824 37.2L831 38.4L836 36.2L850 35.7L857 32.4L862 33.7L871 33.3L884 30.4L889 34.6L899 29.8L904 30.3L917 35.4L921 35.7L935 34.3L939 33L946 28.3L960 31.5L966 32.3L974 30.9L985 25.6L990 25.9L998 28.3L1007 28L1014 32.6L1024 30.7L1034 35.2L1041 36.3L1050 34.3L1059 30.9L1067 31.8L1073 35.5L1082 32.4L1094 32.2L1100 31.3L1110 32.8L1116 31.3L1125 29.7L1137 32L1144 34.6L1154 33.2L1161 34.1L1169 35.5L1177 34L1186 35.8L1196 33.9L1205 27.9L1212 30.8L1222 23.3L1226 23.9L1234 21.4L1243 23.7L1255 25.1L1260 23.9L1272 20.1L1281 26L1286 25.9L1295 22.2L1307 23.8L1311 19.9L1322 17.8L1328 16.2L1340 12.8L1347 14.7L1352 13.5L1365 14.8L1370 18.7L1382 19.6L1387 16L1395 21L1405 17.7L1414 24.1L1425 20.1L1429 24.8L1440 22.2L1440 60Z"/><path fill="currentColor" d="M0 60L0 42.3L8 41.4L15 44.9L27 41.9L34 43.8L45 41.3L50 40L60 42.1L69 37.5L75 36.1L83 37.2L91 36L100 36.9L112 36.8L119 38.6L126 39.4L137 43.1L145 44.4L154 42.5L159 44L170 44.7L180 44.2L189 42.8L196 42.4L203 41.6L214 39.8L219 39.1L229 40.1L237 39.9L247 41.9L257 43.9L260 41.9L273 42.6L280 40.9L287 42.6L297 41.3L307 39.7L316 37.8L324 36L330 32.1L338 32.5L350 31.4L355 28.5L362 28.5L371 28.5L381 30.1L392 29.5L396 32.6L409 30.3L415 28.6L423 27.1L430 28.9L443 27.2L447 25.3L455 25.2L463 24.8L472 27L485 25.7L494 28.7L498 30.6L511 29.3L518 30.7L522 32.1L531 34L543 31.4L550 30.2L558 32.1L570 33.4L577 31L587 31.8L595 31.5L604 31.9L609 33.3L618 36.4L629 35.1L636 36.8L646 39.6L655 40.5L662 36.8L670 36.7L676 34L688 34.2L692 32.3L701 30.9L713 32.5L719 32.1L727 33.5L737 32.4L745 36.9L755 36.1L762 35.7L769 35.8L777 34.3L785 37.9L799 32.9L804 32.4L812 34L820 33.1L828 33.7L836 33.7L847 34.8L855 38.7L864 40.8L870 42L883 44.5L891 42.9L899 44.9L906 45L912 42.3L921 46L929 42.7L942 45.3L948 43.9L960 43.4L963 44.3L975 45.7L983 45.9L993 51L1002 48.3L1011 52L1015 49.8L1023 49L1035 46.6L1043 48.2L1048 43.9L1061 45.3L1066 44.3L1077 39.7L1086 40L1092 42.8L1098 43.1L1109 42.4L1117 42.5L1125 42.5L1135 42.3L1141 42L1150 41.2L1160 39L1169 35.1L1180 36.4L1189 35.1L1194 33.2L1205 35.1L1213 32.8L1218 34.4L1225 34.7L1236 35.6L1244 38.3L1255 38L1264 36.8L1268 37.3L1281 36.8L1289 36.4L1298 36.3L1303 37.4L1316 37L1321 35.5L1329 36.9L1338 36.4L1347 39L1355 37.6L1366 37L1370 38.2L1378 40.7L1389 39.7L1395 36.8L1408 33.3L1416 35.8L1425 30.6L1431 30.8L1440 29.6L1440 60Z"/></symbol>
+    <symbol id="rasgo-b" viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="#fff" opacity=".82" d="M0 60L0 18L9 22.3L17 22.2L24 26.3L32 28L40 26.6L52 29.7L59 32.1L67 27.3L78 30.7L86 30.5L96 28.5L103 28.6L111 31.2L117 28L127 33.5L136 32.8L145 32.1L151 34L163 33.5L167 32.8L175 33.4L187 36.2L194 31.8L202 29.9L213 30.4L219 26.4L230 30.1L239 26.8L246 32L255 32.9L261 34L268 30.9L277 34.3L289 35.7L298 35.3L305 35L315 29.7L325 29.1L329 26.2L339 26.6L350 31.9L354 26.5L364 27.9L373 33.7L380 32.5L392 34.1L397 38.5L408 39.4L416 36.4L425 39.2L433 34.5L439 34.8L451 34.9L458 35.9L464 34L473 33.2L485 31.1L494 30.4L500 34.2L507 34.9L517 34.5L526 31.3L533 36.3L540 35.8L549 33L557 29.5L567 25L577 25.8L586 24.6L593 23.2L600 25.1L607 24.6L621 22L628 23.6L636 21.2L643 21.8L651 25.9L660 21.4L669 23.6L678 20.6L685 17.4L692 15.8L702 19.4L712 13.7L720 13.9L729 16.7L739 16.5L748 17.7L757 21.9L760 24.4L769 22.3L777 26.3L785 25.7L796 25L803 20.2L816 23.5L820 25.1L833 19.1L836 22.1L845 23.3L855 23.8L864 25.2L874 25.1L881 24.1L887 23.1L900 24.1L906 24.5L916 25.2L925 23.4L931 23.5L942 24L948 22.6L960 22.4L963 17.9L976 21.2L980 18.7L992 22.2L1000 19.3L1007 19.1L1015 22.3L1027 23.7L1033 21.1L1041 23.7L1050 19.6L1061 21.8L1070 21.1L1077 20.3L1085 24.2L1096 23.4L1101 20.6L1112 24.7L1117 24.4L1124 28.6L1138 32.7L1145 33.5L1151 30.8L1161 30.3L1169 33.4L1178 30.4L1183 32.6L1192 33.6L1202 33.6L1213 34L1220 32L1227 38.6L1235 35L1245 38L1255 37.1L1265 35.7L1272 39.4L1281 35.9L1289 40.4L1297 33.1L1307 37.6L1311 35.2L1319 28.8L1332 32.6L1341 31.7L1347 29.3L1356 34.8L1365 34.5L1370 34.1L1382 29.7L1391 30.3L1396 29L1407 28.7L1417 26.6L1425 30.7L1432 28.3L1440 29L1440 60Z"/><path fill="currentColor" d="M0 60L0 41L11 40.5L17 41.5L28 40.4L33 41.2L41 40L50 41.1L60 42L67 44.9L79 44.6L83 48.7L90 49.9L102 47.3L112 49.2L118 48.5L125 46.4L136 45.8L143 42.5L154 41.8L162 41.5L170 42.1L178 41.2L186 38.8L196 40L205 43.9L213 41.1L219 42.3L226 42.4L238 41.2L244 39.2L255 37.8L262 37.6L271 38.9L282 38L291 39.4L297 36.7L305 37.4L316 39.8L323 39.4L328 41.4L337 43L346 44L355 42.6L362 43.3L370 42.9L378 42.4L387 42.2L398 42.7L405 40L417 39.3L423 41L435 42.6L440 42.5L450 41.6L456 40.6L468 40.3L474 41.8L481 41.1L494 40L499 35.2L511 35L517 34.5L524 29.7L531 31.4L541 31.7L552 32.1L560 29.3L569 28.5L576 32.4L585 29.2L593 30.7L601 31.6L609 27.8L618 26.3L626 26L638 23.5L642 23.4L655 26.2L659 25.1L667 24.9L677 27.2L689 29.9L695 31.3L703 32.4L713 31.3L722 33.3L728 32.6L735 32.8L743 33L756 33.2L763 31.5L772 29.8L777 33.4L787 33.4L796 33.1L806 34.3L815 37.7L820 39.4L827 37.6L839 39.6L845 38.1L855 38.9L862 34.9L874 33.8L884 31.5L889 30.8L898 34L905 32.6L913 32.1L924 32L933 34L943 34L951 34.3L954 36.8L967 36L971 37.9L980 36.7L993 33.1L1002 33.5L1010 35L1018 32.5L1025 36.1L1032 34.6L1043 34.7L1049 36.9L1058 39.9L1068 42L1074 41.4L1084 45.5L1095 46.4L1100 46.5L1109 43.7L1116 44.1L1127 43.1L1133 45.9L1141 46.2L1151 46.2L1158 46.2L1171 46.8L1177 48.2L1184 48L1193 47.9L1205 48.3L1214 47.6L1221 49.1L1225 49.5L1238 47.6L1245 43.5L1252 41.2L1263 43.2L1269 39.1L1278 39.4L1286 39.8L1297 41.1L1305 41.2L1316 41.9L1319 40.2L1331 43.1L1336 40.2L1349 39.4L1352 37.8L1362 35.1L1375 33.4L1383 35.4L1390 33.2L1395 34.9L1409 33.4L1412 35.8L1425 34.9L1433 36.4L1440 37L1440 60Z"/></symbol>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo" id="topo">
+    <div class="topo__interno">
+      <a class="logo" href="#inicio" aria-label="Pousada Serra e Mar, início">
+        <svg class="logo__emblema" aria-hidden="true"><use href="#emblema"/></svg>
+        <span class="logo__nome">Serra e Mar</span>
+        <span class="logo__tipo">Pousada</span>
+      </a>
+
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Principal">
+        <ul class="menu__lista">
+          <li><a href="#pousada">A pousada</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#acomodacoes">Acomodações</a></li>
+        </ul>
+        <ul class="menu__lista">
+          <li><a href="#cafe">Café da manhã</a></li>
+          <li><a href="#arredores">Arredores</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="hero" id="inicio">
+      <img class="hero__foto"
+           src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=75"
+           srcset="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=70 900w,
+                   https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1920&q=75 1920w"
+           sizes="100vw" alt="Piscina cercada de vegetação tropical com montanhas ao fundo" fetchpriority="high">
+      <div class="hero__conteudo">
+        <h1 class="hero__titulo">Serra e Mar</h1>
+        <p class="hero__texto">Uma pousada entre a mata e o oceano, <br>para chegar sem pressa e voltar sem vontade.</p>
+        <a class="anel" href="#reservar">
+          <span>Reservar<br>estadia</span>
+          <svg class="anel__seta" viewBox="0 0 12 24" aria-hidden="true"><path d="M6 0v22M1 17l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+        </a>
+      </div>
+      <svg class="rasgo rasgo--baixo cor-areia" aria-hidden="true"><use href="#rasgo-a"/></svg>
+    </section>
+
+    <section class="reserva" id="reservar" aria-labelledby="reserva-titulo">
+      <h2 class="invisivel" id="reserva-titulo">Consultar disponibilidade</h2>
+      <form class="reserva__form" id="form-reserva" novalidate>
+        <div class="campo">
+          <label for="entrada">Entrada</label>
+          <input type="date" id="entrada" name="entrada" required>
+        </div>
+        <div class="campo">
+          <label for="saida">Saída</label>
+          <input type="date" id="saida" name="saida" required>
+        </div>
+        <div class="campo">
+          <label for="hospedes">Hóspedes</label>
+          <select id="hospedes" name="hospedes">
+            <option value="1">1 hóspede</option>
+            <option value="2" selected>2 hóspedes</option>
+            <option value="3">3 hóspedes</option>
+            <option value="4">4 hóspedes</option>
+            <option value="5">5 hóspedes</option>
+            <option value="6">6 hóspedes</option>
+          </select>
+        </div>
+        <button class="botao botao--escuro" type="submit">Consultar datas</button>
+        <p class="reserva__aviso" id="reserva-aviso" role="status"></p>
+      </form>
+      <svg class="rasgo rasgo--baixo cor-papel" aria-hidden="true"><use href="#rasgo-b"/></svg>
+    </section>
+
+    <section class="manifesto" id="pousada">
+      <p class="sobretitulo revelar">A pousada</p>
+      <h2 class="manifesto__titulo revelar">Onde a serra encontra o mar</h2>
+      <p class="manifesto__texto revelar">Há lugares em que a paisagem decide o ritmo do dia. Na <strong>Serra e Mar</strong>, a manhã começa com a névoa descendo a mata e termina com o som das ondas. Entre uma coisa e outra, o tempo é todo seu.</p>
+    </section>
+
+    <section class="secao secao--duo">
+      <span class="fantasma" aria-hidden="true">Serra</span>
+      <div class="duo">
+        <div class="duo__texto revelar">
+          <h2 class="titulo">Feita para desacelerar</h2>
+          <p class="subtitulo">Conforto simples, natureza por todos os lados.</p>
+          <p>Se você procura um lugar tranquilo e acolhedor para descansar, a Serra e Mar é o seu endereço. Aqui, o dia pode ser uma trilha na mata, um mergulho no mar ou apenas uma boa leitura na varanda.</p>
+          <p>Recebemos casais, famílias e viajantes que querem trocar o relógio pela paisagem, com o atendimento próximo que só uma pousada oferece.</p>
+          <a class="botao" href="#acomodacoes">Conhecer as acomodações</a>
+        </div>
+        <div class="colagem revelar">
+          <figure class="colagem__foto colagem__foto--a">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&h=1100&q=75" width="900" height="1100" loading="lazy" decoding="async" alt="Praia de areia clara com coqueiros e guarda-sol de palha">
+          </figure>
+          <figure class="colagem__foto colagem__foto--b">
+            <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=900&h=680&q=75" width="900" height="680" loading="lazy" decoding="async" alt="Deck de madeira com espreguiçadeiras de frente para o mar">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa" id="experiencias">
+      <svg class="rasgo rasgo--topo cor-papel" aria-hidden="true"><use href="#rasgo-b"/></svg>
+      <img class="faixa__foto" src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=1920&q=75" loading="lazy" decoding="async" alt="Vista aérea de ondas de mar azul-esverdeado encontrando a areia">
+      <div class="faixa__conteudo revelar">
+        <h2 class="titulo titulo--claro">Mata, cachoeira e mar</h2>
+        <p>Dias para caminhar, mergulhar, ver o sol nascer ou simplesmente não fazer nada.</p>
+        <a class="botao" href="#arredores">Explorar os arredores</a>
+      </div>
+      <svg class="rasgo rasgo--baixo cor-papel" aria-hidden="true"><use href="#rasgo-a"/></svg>
+    </section>
+
+    <section class="secao acomodacoes" id="acomodacoes" aria-labelledby="acomodacoes-titulo">
+      <p class="sobretitulo revelar">Acomodações</p>
+      <h2 class="manifesto__titulo manifesto__titulo--menor revelar" id="acomodacoes-titulo">Um lugar para descansar</h2>
+
+      <div class="carrossel" data-carrossel>
+        <ul class="carrossel__faixa" tabindex="0" aria-label="Acomodações da pousada" data-faixa>
+          <li class="carrossel__item">
+            <img src="assets/suitehorizonte.jpg" width="1200" height="760" loading="lazy" decoding="async" alt="Quarto claro com cama de casal e criado-mudo de madeira">
+            <h3>Suíte Horizonte</h3>
+            <p>Clara e silenciosa, para acordar devagar.</p>
+          </li>
+          <li class="carrossel__item">
+            <img src="assets/suitemata.jpg" width="1200" height="760" loading="lazy" decoding="async" alt="Quarto em tons de madeira com janela aberta para o jardim">
+            <h3>Suíte Mata</h3>
+            <p>Madeira, luz baixa e janela aberta para o verde.</p>
+          </li>
+          <li class="carrossel__item">
+            <img src="assets/suitefamilia.jpg" width="1200" height="760" loading="lazy" decoding="async" alt="Quarto amplo com sofá e cama de casal">
+            <h3>Suíte Família</h3>
+            <p>Espaço de sobra para quem viaja em boa companhia.</p>
+          </li>
+          <li class="carrossel__item">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&h=760&q=75" width="1200" height="760" loading="lazy" decoding="async" alt="Chalé de madeira com deck e espreguiçadeiras à beira da piscina">
+            <h3>Chalé do Deck</h3>
+            <p>Privacidade e um deck para ver o fim de tarde.</p>
+          </li>
+        </ul>
+        <div class="carrossel__controles">
+          <button class="carrossel__seta carrossel__seta--anterior" type="button" aria-label="Acomodação anterior" data-anterior>
+            <svg aria-hidden="true"><use href="#seta"/></svg>
+          </button>
+          <p class="carrossel__contador" aria-live="polite" data-contador>1 / 4</p>
+          <button class="carrossel__seta" type="button" aria-label="Próxima acomodação" data-proximo>
+            <svg aria-hidden="true"><use href="#seta"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--duo secao--inversa" id="cafe">
+      <span class="fantasma" aria-hidden="true">Mar</span>
+      <div class="duo duo--inverso">
+        <div class="colagem colagem--inversa revelar">
+          <figure class="colagem__foto colagem__foto--a">
+            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=900&h=1100&q=75" width="900" height="1100" loading="lazy" decoding="async" alt="Mesa de café da manhã com frutas, ovos, waffles e sucos">
+          </figure>
+          <figure class="colagem__foto colagem__foto--b">
+            <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&h=680&q=75" width="900" height="680" loading="lazy" decoding="async" alt="Piscina entre coqueiros com o mar ao fundo">
+          </figure>
+        </div>
+        <div class="duo__texto revelar">
+          <h2 class="titulo">A manhã começa à mesa</h2>
+          <p class="subtitulo">Café da manhã sem hora para acabar a conversa.</p>
+          <p>Frutas da estação, pão quentinho, café passado na hora. É aqui que os hóspedes se encontram, trocam dicas de trilha e decidem, sem nenhuma pressa, o que fazer com o resto do dia.</p>
+          <a class="botao" href="#reservar">Reservar estadia</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="duvidas" id="duvidas" aria-labelledby="duvidas-titulo">
+      <svg class="rasgo rasgo--topo cor-papel" aria-hidden="true"><use href="#rasgo-a"/></svg>
+      <div class="duvidas__grade">
+        <div class="revelar">
+          <h2 class="titulo titulo--claro" id="duvidas-titulo">Dúvidas rápidas</h2>
+          <p class="duvidas__intro">Não encontrou o que procurava? Fale com a gente pelo WhatsApp.</p>
+          <a class="botao botao--claro" href="#reservar" data-whatsapp>Falar no WhatsApp</a>
+        </div>
+        <div class="perguntas revelar">
+          <details name="duvidas" open>
+            <summary><span class="perguntas__num">01</span>Como faço para reservar?</summary>
+            <p>Escolha as datas no formulário de reserva e envie. A mensagem chega direto no nosso WhatsApp, e respondemos com a disponibilidade e os valores.</p>
+          </details>
+          <details name="duvidas">
+            <summary><span class="perguntas__num">02</span>Quais são os horários de entrada e saída?</summary>
+            <p>Os horários são confirmados junto com a sua reserva. Se precisar chegar mais cedo ou sair mais tarde, é só nos avisar.</p>
+          </details>
+          <details name="duvidas">
+            <summary><span class="perguntas__num">03</span>O café da manhã está incluso?</summary>
+            <p>Sim, o café da manhã faz parte da estadia e é servido todos os dias.</p>
+          </details>
+          <details name="duvidas">
+            <summary><span class="perguntas__num">04</span>Como chegar à pousada?</summary>
+            <p>Depois da confirmação, enviamos a localização e as orientações de acesso para você vir tranquilo.</p>
+          </details>
+        </div>
+      </div>
+      <svg class="rasgo rasgo--baixo cor-papel" aria-hidden="true"><use href="#rasgo-b"/></svg>
+    </section>
+
+    <section class="secao arredores" id="arredores" aria-labelledby="arredores-titulo">
+      <div class="arredores__grade">
+        <div class="revelar">
+          <h2 class="titulo" id="arredores-titulo">Da serra ao mar</h2>
+          <p class="subtitulo">Tudo o que há de melhor, a partir da nossa porta.</p>
+          <ul class="roteiro">
+            <li>
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=160&h=160&q=70" width="160" height="160" loading="lazy" decoding="async" alt="">
+              <div><h3>Mirante da serra</h3><p>Para ver o dia nascer sobre as montanhas.</p></div>
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=160&h=160&q=70" width="160" height="160" loading="lazy" decoding="async" alt="">
+              <div><h3>Cachoeira</h3><p>Trilha pela mata e banho de água doce.</p></div>
+            </li>
+            <li>
+              <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=160&h=160&q=70" width="160" height="160" loading="lazy" decoding="async" alt="">
+              <div><h3>Praia</h3><p>Mar calmo, areia clara e passeios de barco.</p></div>
+            </li>
+          </ul>
+        </div>
+        <svg class="mapa revelar" viewBox="0 0 600 460" role="img" aria-label="Mapa ilustrativo: a pousada fica entre o mirante e a cachoeira, na serra, e a praia, no mar">
+          <path class="mapa__mar" d="M600 214c-52 16-74 54-108 86s-60 34-92 66-44 62-62 94h262z"/>
+          <path class="mapa__onda" d="M600 244c-44 16-68 52-98 82s-62 38-90 66-42 48-54 68M600 276c-36 16-60 48-84 74s-62 40-88 66-32 30-40 44"/>
+          <g class="mapa__serra">
+            <path d="M18 196 96 74l46 66 34-44 74 100"/>
+            <path d="M176 196l58-84 42 56 26-30 52 58"/>
+            <path d="M32 236c34-14 62-12 92 0s68 12 102-2"/>
+          </g>
+          <path class="mapa__rota" d="M108 150c34 44 72 42 116 44s76 26 92 64 62 62 104 72 42 16 56 30"/>
+          <g class="mapa__ponto"><circle cx="108" cy="150" r="6"/><text x="124" y="146">Mirante</text></g>
+          <g class="mapa__ponto"><circle cx="224" cy="194" r="6"/><text x="238" y="186">Cachoeira</text></g>
+          <g class="mapa__ponto mapa__ponto--pousada"><circle cx="320" cy="266" r="11"/><text x="298" y="273" text-anchor="end">Pousada Serra e Mar</text></g>
+          <g class="mapa__ponto"><circle cx="476" cy="360" r="6"/><text x="492" y="365" class="mapa__texto-mar">Praia</text></g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="citacao">
+      <svg class="rasgo rasgo--topo cor-papel" aria-hidden="true"><use href="#rasgo-a"/></svg>
+      <img class="faixa__foto" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=75" loading="lazy" decoding="async" alt="Praia ao entardecer com ondas suaves sobre a areia">
+      <blockquote class="citacao__texto revelar">
+        <p>De um lado, a mata.<br>Do outro, o horizonte.</p>
+        <footer>No meio, o seu descanso.</footer>
+      </blockquote>
+      <svg class="rasgo rasgo--baixo cor-areia" aria-hidden="true"><use href="#rasgo-b"/></svg>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__grade">
+      <div class="rodape__marca">
+        <svg class="rodape__emblema" aria-hidden="true"><use href="#emblema"/></svg>
+        <p class="rodape__nome">Serra e Mar</p>
+        <p>Pousada entre a mata e o oceano.</p>
+      </div>
+      <div>
+        <h2 class="rodape__titulo">Contato</h2>
+        <address>
+          Endereço da pousada<br>
+          Cidade – UF<br>
+          <a href="tel:+5500000000000">(00) 00000-0000</a><br>
+          <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+        </address>
+      </div>
+      <nav aria-label="Rodapé">
+        <h2 class="rodape__titulo">Navegue</h2>
+        <ul>
+          <li><a href="#pousada">A pousada</a></li>
+          <li><a href="#acomodacoes">Acomodações</a></li>
+          <li><a href="#cafe">Café da manhã</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="rodape__titulo">Reservas</h2>
+        <p>Consulte datas e valores direto com a gente.</p>
+        <a class="botao botao--escuro" href="#reservar" data-whatsapp>Falar no WhatsApp</a>
+      </div>
+    </div>
+    <p class="rodape__base">© <span id="ano">2026</span> Pousada Serra e Mar. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
